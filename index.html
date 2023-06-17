@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+    <div id="particles-js">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Quang Dang</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="landing">
+        <div class="container">
+            <div class="text-container">
+                <p id="name-placeholder"></p>
+                <h2>About</h2>
+                <p>This is my about section.</p>
+            </div>
+            <div class="profile-area">
+                <img src="profile.jpg" alt="My Image" class="inner-circle">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div id="skills-slider">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div id="projects-grid">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Your Email">
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <input type="submit" value="Submit" class="btn btn-primary">
+            </form>
+        </div>
+    </section>
+    </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function (event) {
+                particlesJS("particles-js", {
+                    "particles": {
+                        "number": {
+                            "value": 50,
+                        },
+                        "color": {
+                            "value": "#999999"
+                        },
+                        "size": {
+                            "value": 3
+                        },
+                        "line_linked": {
+                            "color": "#999999"
+                        },
+                        "move": {
+                            "speed": 1
+                        }
+                    },
+                    "interactivity": {
+                        "events": {
+                            "onclick": {
+                                "enable": true,
+                                "mode": "push"
+                            },
+                        },
+                        "modes": {
+                            "push": {
+                                "particles_nb": 1
+                            },
+                            "repulse": {
+                                "duration": 10.0
+                            }
+                        }
+                    }
+                });
+
+                let particlesContainer = document.getElementById('particles-js');
+
+                if (particlesContainer) {
+                    particlesContainer.style.zIndex = "-1";
+                }
+            });
+        </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

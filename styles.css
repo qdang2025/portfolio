@@ -1,0 +1,133 @@
+/* Variables for easier color management */
+:root {
+    --color-dark: #202124;
+    --color-white: #f8f9fa;
+    --color-primary: #2962ff;
+    --color-primary-light: #448aff;
+    --color-primary-dark: #003c8f;
+    --color-warning: #ff9800;
+    --transition: 0.3s;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+        "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background-color: var(--color-white);
+}
+
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#main-content {
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Styling for the navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-dark);
+    padding: 10px 0;
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+}
+
+#navbar-items {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#navbar a {
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px;
+    /* Adjust this value to bring items closer or farther apart */
+}
+
+#navbar a:last-child {
+    margin-right: 0;
+    /* This removes the extra space on the right of the last item */
+}
+
+#navbar a:hover {
+    color: var(--color-primary);
+}
+
+/* Styling for the landing section */
+.landing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.landing .text-container {
+    flex: 1;
+}
+
+.landing .profile-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing .profile-area .inner-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* Styling for the skills section */
+.skills {
+    padding: 50px 0;
+}
+
+/* Styling for the projects section */
+/* .projects {
+    padding: 50px 0;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+} */
+
+/* Styling for the contact section */
+.contact {
+    padding: 50px 0;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact .btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.contact .btn-primary:hover {
+    background-color: var(--color-primary-dark);
+}
+
